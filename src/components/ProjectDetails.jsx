@@ -1,7 +1,7 @@
-import React, { useContext } from 'react'
-import { useParams } from 'react-router-dom';
-import { motion } from 'framer-motion';
-import { ProjectsContext } from '../../Context/projectsContext';
+import React, { useContext } from "react";
+import { useParams } from "react-router-dom";
+import { motion } from "framer-motion";
+import { ProjectsContext } from "../../Context/ProjectsContext";
 
 export default function ProjectDetails() {
   let { index } = useParams();

@@ -172,7 +172,6 @@ export default function ProjectsContextProvider(props) {
     setProjects(myProjects);
   }, []);
 
-  console.log(projects);
 
   return (
     <ProjectsContext.Provider value={{ projects }}>

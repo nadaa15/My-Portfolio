@@ -1,42 +1,36 @@
-import React, { useContext } from 'react'
-import { motion } from 'framer-motion';
-import { Link } from 'react-router-dom';
-import { ProjectsContext } from '../../Context/projectsContext';
-
-
-
-
+import React, { useContext } from "react";
+import { motion } from "framer-motion";
+import { Link } from "react-router-dom";
+import { ProjectsContext } from "../../Context/ProjectsContext";
 
 export default function Projects() {
   let { projects } = useContext(ProjectsContext);
 
-
-  
-    const parentVariant = {
-        hidden: {
-            opacity:0
-        },
-        visible: {
-            opacity: 1,
-            transition: {
-                duration:.5,
-            }
-        }
-    }
-
-    const childVariant = {
-      hidden: {
-        y: 100,
+  const parentVariant = {
+    hidden: {
+      opacity: 0,
+    },
+    visible: {
+      opacity: 1,
+      transition: {
+        duration: 0.5,
       },
-      visible: {
-        y: 0,
-        transition: {
-            duration: 1,
-            when:"beforeChildren",
-            staggerChildren:.5,
-        },
+    },
+  };
+
+  const childVariant = {
+    hidden: {
+      y: 100,
+    },
+    visible: {
+      y: 0,
+      transition: {
+        duration: 1,
+        when: "beforeChildren",
+        staggerChildren: 0.5,
       },
-    };
+    },
+  };
   return (
     <>
       <motion.div
@@ -74,11 +68,12 @@ export default function Projects() {
                 {project.title}{" "}
               </h3>
               <p className="text-gray-300 mb-4">
-                {project.description.split(" ").slice(0, 6).join(" ")}... <Link to={`/Projectdetails/${index}`}>
-                  <motion.span
-                    whileHover={{ x: 10 }}
-                    className="text-base"
-                  > Show details</motion.span>
+                {project.description.split(" ").slice(0, 6).join(" ")}...{" "}
+                <Link to={`/Projectdetails/${index}`}>
+                  <motion.span whileHover={{ x: 10 }} className="text-base">
+                    {" "}
+                    Show details
+                  </motion.span>
                 </Link>
               </p>
               <div className="flex space-x-4">
