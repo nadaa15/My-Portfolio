@@ -68,7 +68,7 @@ export default function Projects() {
                 {project.title}{" "}
               </h3>
               <p className="text-gray-300 mb-4">
-                {project.description.split(" ").slice(0, 6).join(" ")}...{" "}
+                {project.description.split(" ").slice(0, 20).join(" ")}...{" "}
                 <Link to={`/Projectdetails/${index}`}>
                   <motion.span whileHover={{ x: 10 }} className="text-base">
                     {" "}
