@@ -8,9 +8,11 @@ import todo from "../src/assets/images/to-do.jpg";
 import login from "../src/assets/images/login.jpg";
 import cart from "../src/assets/images/cart.jpg";
 import weather from "../src/assets/images/weather.webp";
+import weather2 from "../src/assets/images/weather react.png";
 import yummy from "../src/assets/images/yummy.png";
 import note from "../src/assets/images/note.jpeg";
 import freshcart from "../src/assets/images/fresh-cart.jpg";
+import exclusive from "../src/assets/images/exclusive.png";
 
 export const ProjectsContext = createContext();
 
@@ -29,6 +31,7 @@ export default function ProjectsContextProvider(props) {
           github: "https://github.com/nadaa15/Mealify",
         },
         technologies: ["Html", "CSS", "Media Queries"],
+        catg: "HTML & CSS",
       },
       {
         img: daniels,
@@ -40,6 +43,7 @@ export default function ProjectsContextProvider(props) {
           github: "https://github.com/nadaa15/Daniels",
         },
         technologies: ["Html", "CSS", "Bootstrap"],
+        catg: "HTML & CSS",
       },
       {
         img: viva,
@@ -51,6 +55,7 @@ export default function ProjectsContextProvider(props) {
           github: "https://github.com/nadaa15/VivaDecor",
         },
         technologies: ["Html", "CSS", "Bootstrap"],
+        catg: "HTML & CSS",
       },
       {
         img: slider,
@@ -62,6 +67,7 @@ export default function ProjectsContextProvider(props) {
           github: "https://github.com/nadaa15/Image-Gallery",
         },
         technologies: ["Html", "CSS", "JavaScript"],
+        catg: "JavaScript",
       },
       {
         img: bookmark,
@@ -73,6 +79,7 @@ export default function ProjectsContextProvider(props) {
           github: "https://github.com/nadaa15/Bookmark",
         },
         technologies: ["Html", "CSS", "Bootstrap", "JavaScript", "LocaStorage"],
+        catg: "JavaScript",
       },
       {
         img: todo,
@@ -84,6 +91,7 @@ export default function ProjectsContextProvider(props) {
           github: "https://github.com/nadaa15/To-Do-List",
         },
         technologies: ["Html", "CSS", "Bootstrap", "JavaScript", "LocaStorage"],
+        catg: "JavaScript",
       },
       {
         img: login,
@@ -95,6 +103,7 @@ export default function ProjectsContextProvider(props) {
           github: "https://github.com/nadaa15/Login-system/",
         },
         technologies: ["Html", "CSS", "Bootstrap", "JavaScript", "LocaStorage"],
+        catg: "JavaScript",
       },
       {
         img: cart,
@@ -105,6 +114,7 @@ export default function ProjectsContextProvider(props) {
           github: "https://github.com/nadaa15/Shopping-Cart/",
         },
         technologies: ["Html", "TailwindCSS", "JavaScript", "LocaStorage"],
+        catg: "JavaScript",
       },
       {
         img: weather,
@@ -123,6 +133,7 @@ export default function ProjectsContextProvider(props) {
           "Weather API",
           "Geolocation API",
         ],
+        catg: "JavaScript",
       },
       {
         img: yummy,
@@ -141,6 +152,7 @@ export default function ProjectsContextProvider(props) {
           "jQuery",
           "Regex",
         ],
+        catg: "JavaScript",
       },
       {
         img: note,
@@ -161,6 +173,7 @@ export default function ProjectsContextProvider(props) {
           "Axios",
           "React-hot-toast",
         ],
+        catg: "React",
       },
       {
         img: freshcart,
@@ -183,6 +196,53 @@ export default function ProjectsContextProvider(props) {
           "React-hot-toast",
           "React-slick",
         ],
+        catg: "React",
+      },
+      {
+        img: weather2,
+        title: "Weather App using React",
+        description:
+          "A responsive Weather App that provides current weather information based on the user's location built using React.js, Redux toolkit, Material ui, Weather API, Geolocation API.",
+        links: {
+          site: "https://nadaa15.github.io/Weather-App-React/",
+          github: "https://github.com/nadaa15/Weather-App-React",
+        },
+        technologies: [
+          "React js",
+          "Redux toolkit",
+          "MUI",
+          "Axios",
+          "React-hot-toast",
+          "React-slick",
+          "Weather API",
+          "Geolocation API",
+        ],
+        catg: "React",
+      },
+      {
+        img: exclusive,
+        title: "Exclusive",
+        description:
+          "Exclusive is an eCommerce application built using React, Tailwind CSS, Redux Toolkit and Firebase. It provides User authentication (login and signup), Displaying and searching products, filtring by category, product details, Shopping cart and wishlist functionality, Checkout process",
+        links: {
+          site: "https://nadaa15.github.io/Exclusive-Store/",
+          github: "https://github.com/nadaa15/Exclusive-Store",
+        },
+        technologies: [
+          "React",
+          "React Router",
+          "TailwindCss",
+          "Redux Toolkit",
+          "Context API",
+          "Firebase",
+          "Axios",
+          "React-hot-toast",
+          "React-slick",
+          "React-Helmet",
+          "React-Paginate",
+          "DummyJSON API",
+        ],
+        catg: "React",
       },
     ];
 

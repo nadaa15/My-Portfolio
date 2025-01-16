@@ -2,6 +2,8 @@ import React from 'react'
 import tailwind from "../assets/images/tailwind.webp";
 import jquery from "../assets/images/jQuery.png";
 import framermotion from "../assets/images/framermotion.jpg";
+import redux from "../assets/images/redux.webp";
+import mui from "../assets/images/mui.png";
 import { Link } from 'react-router-dom';
 import { motion } from 'framer-motion';
 
@@ -53,6 +55,26 @@ export default function Skills() {
         {
           name: "GitHub",
           icon: <i class="fa-brands fa-github text-black"></i>,
+        },
+        {
+          name: "Redux Toolkit",
+          icon: (
+            <img
+              src={redux}
+              alt="Redux Toolkit logo"
+              className="w-6 h-6 mix-blend-multiply"
+            />
+          ),
+        },
+        {
+          name: "Material ui",
+          icon: (
+            <img
+              src={mui}
+              alt="Material ui logo"
+              className="w-6 h-6 mix-blend-multiply"
+            />
+          ),
         },
         {
           name: "Framer Motion",
