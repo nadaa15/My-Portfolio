@@ -1,7 +1,7 @@
 import React, { useContext, useState } from "react";
 import { motion } from "framer-motion";
 import { Link } from "react-router-dom";
-import { ProjectsContext } from "../../Context/projectsContext";
+import { ProjectsContext } from "../../Context/ProjectsContext";
 
 export default function Projects() {
   const { projects } = useContext(ProjectsContext);
