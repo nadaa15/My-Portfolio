@@ -4,13 +4,13 @@ import { motion } from "framer-motion";
 import { ProjectsContext } from "../../Context/ProjectsContext";
 
 export default function ProjectDetails() {
-  let { index } = useParams();
+  let { id } = useParams();
   let { projects } = useContext(ProjectsContext);
 
   return (
     <>
-      {projects.map((project, indx) =>
-        index == indx ? (
+      {projects.map((project) =>
+        project.id == id ? (
           <motion.div
             className="my-20 container flex flex-col justify-center items-center"
             initial={{ opacity: 0 }}
