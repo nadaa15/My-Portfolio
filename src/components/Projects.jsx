@@ -70,7 +70,7 @@ export default function Projects() {
           >
             All
           </motion.button>
-          {categories.map((cat,index) => (
+          {categories.map((cat, index) => (
             <motion.button
               key={index}
               onClick={() => filtration(cat)}
@@ -80,13 +80,13 @@ export default function Projects() {
             </motion.button>
           ))}
         </motion.div>
-        {filteredProjects.map((project,index) => (
+        {filteredProjects.map((project) => (
           <motion.div
             variants={childVariant}
             initial="hidden"
             whileInView="visible"
             viewport={{ once: true }}
-            key={index}
+            key={project.id}
             className={`flex flex-col md:flex-row ${
               filteredProjects.indexOf(project) % 2 !== 0
                 ? "md:flex-row-reverse"
@@ -94,7 +94,7 @@ export default function Projects() {
             } mb-12`}
           >
             <div className="w-full md:w-1/2 p-4">
-              <Link to={`/Projectdetails/${index}`}>
+              <Link to={`/Projectdetails/${project.id}`}>
                 <motion.img
                   whileHover={{ scale: 0.9 }}
                   src={project.img}
@@ -109,7 +109,7 @@ export default function Projects() {
               </h3>
               <p className="text-gray-300 mb-4">
                 {project.description.split(" ").slice(0, 20).join(" ")}...
-                <Link to={`/Projectdetails/${index}`}>
+                <Link to={`/Projectdetails/${project.id}`}>
                   <motion.span whileHover={{ x: 10 }} className="text-base">
                     Show details
                   </motion.span>

@@ -22,6 +22,7 @@ export default function ProjectsContextProvider(props) {
   useEffect(() => {
     const myProjects = [
       {
+        id:1,
         img: mealify,
         title: "Mealify",
         description:
@@ -34,6 +35,7 @@ export default function ProjectsContextProvider(props) {
         catg: "HTML & CSS",
       },
       {
+        id:2,
         img: daniels,
         title: "Portfolio template",
         description:
@@ -46,6 +48,7 @@ export default function ProjectsContextProvider(props) {
         catg: "HTML & CSS",
       },
       {
+        id:3,
         img: viva,
         title: "Viva Decor",
         description:
@@ -58,6 +61,7 @@ export default function ProjectsContextProvider(props) {
         catg: "HTML & CSS",
       },
       {
+        id:4,
         img: slider,
         title: "Slider",
         description:
@@ -70,6 +74,7 @@ export default function ProjectsContextProvider(props) {
         catg: "JavaScript",
       },
       {
+        id:5,
         img: bookmark,
         title: "Bookmarker",
         description:
@@ -82,6 +87,7 @@ export default function ProjectsContextProvider(props) {
         catg: "JavaScript",
       },
       {
+        id:6,
         img: todo,
         title: "To-Do-List",
         description:
@@ -94,6 +100,7 @@ export default function ProjectsContextProvider(props) {
         catg: "JavaScript",
       },
       {
+        id:7,
         img: login,
         title: "Authontcator",
         description:
@@ -106,6 +113,7 @@ export default function ProjectsContextProvider(props) {
         catg: "JavaScript",
       },
       {
+        id:8,
         img: cart,
         title: "Shopping cart",
         description: `This is a simple e-commerce shopping cart web application that allows users to: Browse and add products to their shopping cart from the home page. View, increment, decrement, or remove products in their cart. The total price of items in the cart is dynamically updated as products are added, removed, or their quantities are changed. User authentication functionality with login and logout. All cart and user data is stored in the browser's localStorage.`,
@@ -117,6 +125,7 @@ export default function ProjectsContextProvider(props) {
         catg: "JavaScript",
       },
       {
+        id:9,
         img: weather,
         title: "Weather App",
         description:
@@ -136,6 +145,7 @@ export default function ProjectsContextProvider(props) {
         catg: "JavaScript",
       },
       {
+        id:10,
         img: yummy,
         title: "Yummy",
         description:
@@ -155,6 +165,7 @@ export default function ProjectsContextProvider(props) {
         catg: "JavaScript",
       },
       {
+        id:11,
         img: note,
         title: "Note-App",
         description:
@@ -176,6 +187,7 @@ export default function ProjectsContextProvider(props) {
         catg: "React",
       },
       {
+        id:12,
         img: freshcart,
         title: "Fresh-Cart",
         description:
@@ -199,6 +211,7 @@ export default function ProjectsContextProvider(props) {
         catg: "React",
       },
       {
+        id:13,
         img: weather2,
         title: "Weather App using React",
         description:
@@ -220,6 +233,7 @@ export default function ProjectsContextProvider(props) {
         catg: "React",
       },
       {
+        id:14,
         img: exclusive,
         title: "Exclusive",
         description:
