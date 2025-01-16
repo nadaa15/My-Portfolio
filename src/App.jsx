@@ -30,7 +30,7 @@ function App() {
           element: <Projects />,
         },
         {
-          path: "Projectdetails/:index",
+          path: "Projectdetails/:id",
           element: <ProjectDetails />,
         },
         {

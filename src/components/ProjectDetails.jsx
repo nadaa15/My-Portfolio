@@ -4,7 +4,7 @@ import { motion } from "framer-motion";
 import { ProjectsContext } from "../../Context/ProjectsContext";
 
 export default function ProjectDetails() {
-  let { id } = useParams();
+  let { id } = useParams();  
   let { projects } = useContext(ProjectsContext);
 
   return (
