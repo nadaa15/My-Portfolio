@@ -52,7 +52,7 @@ export default function Home() {
                 className="flex flex-row items-center gap-6 my-4 md:mb-0"
               >
                 <motion.a
-                  href="Nada.Ayman.CV.pdf"
+                  href="Nada Ayman CV.pdf"
                   target="_blank"
                   whileHover={{
                     scale: 1.05,
