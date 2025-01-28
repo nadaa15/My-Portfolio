@@ -11,7 +11,7 @@ export default function About() {
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
             transition={{ duration: 1 }}
-            className="text-center text-5xl uppercase italic font-bold text-gray-200"
+            className="text-center text-5xl uppercase italic font-bold text-gray-800 dark:text-gray-100"
           >
             About me
           </motion.h3>
@@ -21,7 +21,7 @@ export default function About() {
             whileInView={{ opacity: 1, x: 0 }}
             viewport={{ once: true }}
             transition={{ duration: 1, delay: 0.5 }}
-            className="text-lg md:text-4xl font-semibold text-gray-400 mt-6"
+            className="text-lg md:text-4xl font-semibold text-gray-500 dark:text-gray-300 mt-6"
           >
             Hi, I'm Nada Ayman, a front-end developer with a passion for
             creating engaging and user-friendly web experiences. Although my

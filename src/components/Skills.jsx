@@ -91,11 +91,11 @@ export default function Skills() {
   return (
     <>
       <motion.div
-        initial={{ opacity: 0, y:80 }}
-        whileInView={{ opacity: 1, y:0 }}
+        initial={{ opacity: 0, y: 80 }}
+        whileInView={{ opacity: 1, y: 0 }}
         viewport={{ once: true }}
         transition={{ duration: 1 }}
-        className="flex flex-col justify-center mt-32 px-4 text-gray-200 pb-8 md:py-12"
+        className="flex flex-col justify-center mt-32 px-4 ttext-gray-800 dark:text-gray-100 pb-8 md:py-12"
         id="skills"
       >
         <h2 className="text-4xl font-bold mb-4 text-center">Skills</h2>
@@ -108,11 +108,13 @@ export default function Skills() {
         </p>
 
         <div className="flex flex-col md:flex-row justify-center space-y-8 md:space-y-0 md:space-x-8">
-          <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6 w-full border border-purple-900 p-6 rounded-lg bg-purple-900/20 shadow-lg">
+          <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6 w-full border border-purple-900 p-6 rounded-lg bg-gray-300 dark:bg-black dark:bg-opacity-40 shadow-lg">
             {skills.technologies.map((tech, idx) => (
               <div key={idx} className="flex items-center space-x-2">
                 <span className="text-lg md:text-2xl">{tech.icon}</span>
-                <span className="text-gray-100 text-base md:text-xl">{tech.name}</span>
+                <span className="text-gray-800 dark:text-gray-100 text-base md:text-xl">
+                  {tech.name}
+                </span>
               </div>
             ))}
           </div>

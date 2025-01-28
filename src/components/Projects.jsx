@@ -56,7 +56,9 @@ export default function Projects() {
         className="container p-6 md:my-20"
         id="portfolio"
       >
-        <h2 className="text-3xl font-bold text-gray-200">My Projects</h2>
+        <h2 className="text-3xl font-bold text-gray-800 dark:text-gray-200">
+          My Projects
+        </h2>
         <motion.div
           variants={childVariant}
           initial="hidden"
@@ -104,10 +106,10 @@ export default function Projects() {
               </Link>
             </div>
             <div className="w-full md:w-1/2 p-4 flex flex-col justify-center">
-              <h3 className="text-2xl font-semibold text-gray-200 mb-4">
+              <h3 className="text-2xl font-semibold text-gray-800 dark:text-gray-200 mb-4">
                 {project.title}
               </h3>
-              <p className="text-gray-300 mb-4">
+              <p className="text-gray-800 dark:text-gray-300 mb-4">
                 {project.description.split(" ").slice(0, 20).join(" ")}...
                 <Link to={`/Projectdetails/${project.id}`}>
                   <motion.span whileHover={{ x: 10 }} className="text-base">

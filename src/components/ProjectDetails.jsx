@@ -36,15 +36,17 @@ export default function ProjectDetails() {
               viewport={{ once: true }}
               transition={{ duration: 1, delay: 1 }}
             >
-              <h1 className="text-2xl font-semibold text-gray-200 mb-4">
+              <h1 className="text-2xl font-semibold text-gray-800 dark:text-gray-200 mb-4">
                 {project.title}
               </h1>
-              <p className="text-gray-300 mb-4">{project.description}</p>
-              <ul className="text-white flex justify-start items-center gap-5 flex-wrap mb-6">
+              <p className="text-gray-800 dark:text-gray-300 mb-4">
+                {project.description}
+              </p>
+              <ul className="text-black dark:text-white flex justify-start items-center gap-5 flex-wrap mb-6">
                 {project.technologies?.map((technology, index) => (
                   <li
                     key={index}
-                    className="bg-gray-300 bg-opacity-10 px-4 py-2 rounded-3xl"
+                    className="bg-gray-600 bg-opacity-20 dark:bg-gray-300 dark:bg-opacity-10 px-4 py-2 rounded-3xl"
                   >
                     {technology}
                   </li>

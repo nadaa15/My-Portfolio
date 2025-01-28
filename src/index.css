@@ -5,12 +5,11 @@
 
 @layer utilities{
 .container{
-    @apply w-full md:max-w-[85%] mx-auto px-4;
+    @apply w-full md:max-w-[85%] mx-auto px-4 my-32;
 }
 }
 body {
   font-family: "Space Grotesk", sans-serif;
-  background-color: #190b1f;
 }
 
 h2 {
@@ -19,8 +18,4 @@ h2 {
 
 p {
   @apply text-xl tracking-tight leading-relaxed
-}
-
-span {
-  @apply text-purple-600
 }
