@@ -1,4 +1,4 @@
-import React, { useContext, useState } from "react";
+import React, { useContext, useEffect, useState } from "react";
 import { motion } from "framer-motion";
 import { Link } from "react-router-dom";
 import { ProjectsContext } from "../../Context/ProjectsContext";
@@ -34,16 +34,22 @@ export default function Projects() {
     },
   };
 
-  function filtration(category) {
-    if (category) {
-      const filteredItems = projects.filter(
-        (project) => project.catg === category
-      );
-      setFilteredProjects(filteredItems);
-    } else {
-      setFilteredProjects(projects);
-    }
+function filtration(category) {
+  if (category === null || category === undefined) {
+    setFilteredProjects(projects);
+  } else {
+    const filteredItems = projects.filter(
+      (project) => project.catg === category
+    );
+    setFilteredProjects(filteredItems);
   }
+  }
+  
+  
+  useEffect(() => {
+    setFilteredProjects(projects);
+  }, [projects]);
+  
   
 
   return (
