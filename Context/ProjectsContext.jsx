@@ -5,14 +5,13 @@ import viva from "../src/assets/images/vivadecor.png";
 import slider from "../src/assets/images/slider.png";
 import bookmark from "../src/assets/images/bookmarker.jpg";
 import todo from "../src/assets/images/to-do.jpg";
-import login from "../src/assets/images/login.jpg";
-import cart from "../src/assets/images/cart.jpg";
 import weather from "../src/assets/images/weather.webp";
 import weather2 from "../src/assets/images/weather react.png";
 import yummy from "../src/assets/images/yummy.png";
 import note from "../src/assets/images/note.jpeg";
 import freshcart from "../src/assets/images/fresh-cart.jpg";
 import exclusive from "../src/assets/images/exclusive.png";
+import trio from "../src/assets/images/trio.png";
 
 export const ProjectsContext = createContext();
 
@@ -22,7 +21,7 @@ export default function ProjectsContextProvider(props) {
   useEffect(() => {
     const myProjects = [
       {
-        id:1,
+        id: 1,
         img: mealify,
         title: "Mealify",
         description:
@@ -35,7 +34,7 @@ export default function ProjectsContextProvider(props) {
         catg: "HTML & CSS",
       },
       {
-        id:2,
+        id: 2,
         img: daniels,
         title: "Portfolio template",
         description:
@@ -48,7 +47,7 @@ export default function ProjectsContextProvider(props) {
         catg: "HTML & CSS",
       },
       {
-        id:3,
+        id: 3,
         img: viva,
         title: "Viva Decor",
         description:
@@ -61,7 +60,7 @@ export default function ProjectsContextProvider(props) {
         catg: "HTML & CSS",
       },
       {
-        id:4,
+        id: 4,
         img: slider,
         title: "Slider",
         description:
@@ -74,7 +73,7 @@ export default function ProjectsContextProvider(props) {
         catg: "JavaScript",
       },
       {
-        id:5,
+        id: 5,
         img: bookmark,
         title: "Bookmarker",
         description:
@@ -87,7 +86,7 @@ export default function ProjectsContextProvider(props) {
         catg: "JavaScript",
       },
       {
-        id:6,
+        id: 6,
         img: todo,
         title: "To-Do-List",
         description:
@@ -100,32 +99,7 @@ export default function ProjectsContextProvider(props) {
         catg: "JavaScript",
       },
       {
-        id:7,
-        img: login,
-        title: "Authontcator",
-        description:
-          "A responsive login system featuring user registration, login and logout, client-side validation for registration and login form, basic session management using LocaStorage",
-        links: {
-          site: "https://nadaa15.github.io/Login-system/",
-          github: "https://github.com/nadaa15/Login-system/",
-        },
-        technologies: ["Html", "CSS", "Bootstrap", "JavaScript", "LocaStorage"],
-        catg: "JavaScript",
-      },
-      {
-        id:8,
-        img: cart,
-        title: "Shopping cart",
-        description: `This is a simple e-commerce shopping cart web application that allows users to: Browse and add products to their shopping cart from the home page. View, increment, decrement, or remove products in their cart. The total price of items in the cart is dynamically updated as products are added, removed, or their quantities are changed. User authentication functionality with login and logout. All cart and user data is stored in the browser's localStorage.`,
-        links: {
-          site: "https://nadaa15.github.io/Shopping-Cart/",
-          github: "https://github.com/nadaa15/Shopping-Cart/",
-        },
-        technologies: ["Html", "TailwindCSS", "JavaScript", "LocaStorage"],
-        catg: "JavaScript",
-      },
-      {
-        id:9,
+        id: 7,
         img: weather,
         title: "Weather App",
         description:
@@ -145,7 +119,7 @@ export default function ProjectsContextProvider(props) {
         catg: "JavaScript",
       },
       {
-        id:10,
+        id: 8,
         img: yummy,
         title: "Yummy",
         description:
@@ -165,7 +139,7 @@ export default function ProjectsContextProvider(props) {
         catg: "JavaScript",
       },
       {
-        id:11,
+        id: 9,
         img: note,
         title: "Note-App",
         description:
@@ -187,7 +161,7 @@ export default function ProjectsContextProvider(props) {
         catg: "React",
       },
       {
-        id:12,
+        id: 10,
         img: freshcart,
         title: "Fresh-Cart",
         description:
@@ -211,7 +185,7 @@ export default function ProjectsContextProvider(props) {
         catg: "React",
       },
       {
-        id:13,
+        id: 11,
         img: weather2,
         title: "Weather App using React",
         description:
@@ -233,7 +207,7 @@ export default function ProjectsContextProvider(props) {
         catg: "React",
       },
       {
-        id:14,
+        id: 12,
         img: exclusive,
         title: "Exclusive",
         description:
@@ -257,6 +231,21 @@ export default function ProjectsContextProvider(props) {
           "DummyJSON API",
         ],
         catg: "React",
+      },
+      {
+        id: 13,
+        img: trio,
+        title: "SND (Shipping Services Platform)",
+        description:
+          `A web platform that connects customers with delivery service providers. Users can browse services, place orders, track shipments, and manage profiles, while providers can register, offer delivery options, and manage their orders. Built with Nuxt 3 for server-side rendering and enhanced SEO, with dynamic routing and form validation across multiple steps. The system includes user and provider dashboards, authentication, notification system, and responsive design based on Figma mockups.`,
+        links: {
+          site: "https://trio-snd.onrender.com",
+          github: "https://github.com/nadaa15/Trio-Shipping-Services-Platform-",
+        },
+        technologies: [
+           "Nuxt 3", "TypeScript", "Tailwind CSS", "Pinia", "Axios", "vuetify", "vee-validate", "yup", "swiper", "nuxtjs/i18n", "Figma", "Git"
+        ],
+        catg: "vue",
       },
     ];
 

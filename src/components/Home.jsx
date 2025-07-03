@@ -71,6 +71,13 @@ export default function Home() {
                 >
                   <i className="fa-brands fa-github"></i>
                 </motion.a>
+                <motion.a
+                  whileHover={{ scale: 1.2 }}
+                  href="https://wa.me/201553396945"
+                  target="_blank"
+                >
+                  <i className="fa-brands fa-whatsapp"></i>
+                </motion.a>
 
                 <motion.a
                   whileHover={{ scale: 1.2 }}
@@ -113,7 +120,7 @@ export default function Home() {
       </header>
       <About />
       <Projects />
-      <Contact/>
+      <Contact />
     </>
   );
 }

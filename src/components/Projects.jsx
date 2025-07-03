@@ -6,7 +6,7 @@ import { ProjectsContext } from "../../Context/ProjectsContext";
 export default function Projects() {
   const { projects } = useContext(ProjectsContext);
   const [filteredProjects, setFilteredProjects] = useState(projects);
-  const categories = ["HTML & CSS", "JavaScript", "React"];
+  const categories = ["HTML & CSS", "JavaScript", "React", "vue"];
 
   const parentVariant = {
     hidden: {
@@ -47,7 +47,7 @@ function filtration(category) {
   
   
   useEffect(() => {
-    setFilteredProjects(projects);
+    setFilteredProjects(projects.reverse());
   }, [projects]);
   
   

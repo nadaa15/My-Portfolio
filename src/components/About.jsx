@@ -21,7 +21,7 @@ export default function About() {
             whileInView={{ opacity: 1, x: 0 }}
             viewport={{ once: true }}
             transition={{ duration: 1, delay: 0.5 }}
-            className="text-lg md:text-4xl font-semibold text-gray-500 dark:text-gray-300 mt-6"
+            className="text-lg md:text-3xl font-semibold text-gray-500 dark:text-gray-300 mt-6"
           >
             Hi, I'm Nada Ayman, a front-end developer with a passion for
             creating engaging and user-friendly web experiences. Although my
@@ -34,13 +34,15 @@ export default function About() {
             from Route Academy, where I gained hands-on experience in building
             responsive and interactive websites using the latest technologies.{" "}
             <br />
-            I'm currently a Frontend (React.js) intern at Web Masters, where I
-            work on hands-on projects that simulate the labor market to expand
-            my experience. <br /> <br /> I'm continuously learning and expanding
-            my skills, eager to explore new frameworks, tools, and best
-            practices in the ever-evolving field of web development. My goal is
-            to be part of innovative projects where I can contribute my
-            creativity and technical expertise.
+            <br />
+            I then joined Web Masters as a React intern, gaining practical
+            experience with modern front-end tools. Most recently, I completed a
+            4-month internship in a software company, working with React.js, Next.js, Vue 3 and Nuxt to develop production-level features in a
+            collaborative team environment. <br /> <br /> I'm continuously
+            learning and expanding my skills, eager to explore new frameworks,
+            tools, and best practices in the ever-evolving field of web
+            development. My goal is to be part of innovative projects where I
+            can contribute my creativity and technical expertise.
           </motion.p>
 
           <Skills />
